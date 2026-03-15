@@ -303,7 +303,12 @@
 </footer>
 
 <script>
-     mobileMenuBtn.addEventListener('click', () => {
+      document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+          
+            mobileMenuBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
                 // Toggle icon
                 if (!mobileMenu.classList.contains('hidden')) {
