@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us & Officers | TLE Organization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url('https://i.imgur.com/x15DQz6.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #f7f7f7;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.4);
+            z-index: -1;
+        }
+
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header" class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-red-500/20 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-3">
+            <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-home.html" class="flex items-center space-x-3">
+                <img src="https://i.imgur.com/UumgAmR.png"
+                    onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'"
+                    alt="DEPED Logo" class="h-10 w-auto rounded-full shadow-md">
+                <img src="https://i.imgur.com/ezYRCVu.jpeg"
+                    onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'"
+                    alt="MNHS Logo" class="h-10 w-auto rounded-full shadow-md">
+                <img src="https://i.imgur.com/JwTUE7y.png"
+                    onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'"
+                    alt="TLE Logo" class="h-10 w-auto rounded-full shadow-md">
+                <span class="text-xl font-extrabold tracking-tight text-gray-900 hidden sm:block">
+                    Muntindilaw <span class="text-red-600">TLE</span> Org.
+                </span>
+            </a>
+
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-home.html"
+                    class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Home</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE-ORG-officer-page.html"
+                    class="nav-link text-red-600 font-bold transition duration-150">About</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-ACTIVITIES.html"
+                    class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Events</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-VMC.html"
+                    class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Join TLE</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-feedback.html"
+                    class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Feedback</a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700 hover:text-red-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-home.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Home</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE-ORG-officer-page.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-red-600 bg-gray-50">About</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-ACTIVITIES.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Events</a>
+                <a href="#other"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Other
+                    Info</a>
+                <a href="#feedback"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Feedback</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about-organization" class="py-20 sm:py-28 bg-white/40 backdrop-blur-md border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="text-center mb-16">
+                    <h1 class="text-5xl font-extrabold text-gray-900 mb-4 sm:text-6xl leading-tight">
+                        The <span class="text-red-600">TLE Organization</span>
+                    </h1>
+                    <p class="text-center text-xl text-gray-600 max-w-4xl mx-auto">
+                        Learn about our purpose and our journey in fostering essential life skills for the students of
+                        Muntindilaw National High School.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    <div class="bg-white/95 p-8 rounded-2xl shadow-xl border-t-8 border-red-600 flex flex-col">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">Our Purpose</h3>
+                        <p class="text-lg text-gray-700 flex-grow">
+                            The Muntindilaw TLE Organization is dedicated to empowering students with essential
+                            hands-on, entrepreneurial, and technical skills across Technology and Livelihood Education
+                            (TLE) strands, including ICT, Culinary Arts, and Industrial Arts. Its core mission is to
+                            bridge the gap between academic theory and practical application, fostering responsible,
+                            self-reliant, and career-ready graduates.
+                        </p>
+                    </div>
+
+                    <div class="bg-white/95 p-8 rounded-2xl shadow-xl border-t-8 border-gray-400 flex flex-col">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-4">Our History</h3>
+                        <p class="text-lg text-gray-700 flex-grow">
+                            [The history of the TLE Organization will be added here soon. This section will detail the
+                            organization's founding, key milestones, and its evolution over the years.]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="officers-detail" class="py-20 sm:py-28 bg-white/40 backdrop-blur-md border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-gray-900 text-center mb-4">
+                    Meet Our Dedicated <span class="text-red-600">Officers</span>
+                </h2>
+                <p class="text-center text-lg text-gray-600 mb-16 max-w-4xl mx-auto">
+                    These student leaders and faculty advisors are committed to upholding the TLE organization's mission
+                    and driving positive change through education and skill-building.
+                </p>
+
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                        <div
+                            class="bg-gray-50/90 p-6 rounded-xl shadow-2xl hover:shadow-red-300/50 transition duration-300 text-center border-t-8 border-red-600 h-full flex flex-col">
+                            <img src="https://i.imgur.com/554OoS6.png" alt="President"
+                                class="w-28 h-28 object-cover rounded-full mx-auto mb-4 shadow-xl ring-4 ring-red-300">
+                            <h3 class="text-2xl font-bold text-gray-900">Eukan Christoff A. Tinio</h3>
+                            <p class="text-red-600 font-extrabold mt-1 text-lg">President</p>
+                            <p class="text-sm text-gray-500 mt-3 flex-grow">Leading the organization with a focus on
+                                strategic planning, skill development, and strong community outreach initiatives.</p>
+                        </div>
+
+                        <div
+                            class="bg-gray-50/90 p-6 rounded-xl shadow-2xl hover:shadow-yellow-300/50 transition duration-300 text-center border-t-8 border-yellow-600 h-full flex flex-col">
+                            <img src="https://i.imgur.com/3NNAI99.png" alt="Vice President"
+                                class="w-28 h-28 object-cover rounded-full mx-auto mb-4 shadow-xl ring-4 ring-yellow-300">
+                            <h3 class="text-2xl font-bold text-gray-900">Ken Gervacio</h3>
+                            <p class="text-yellow-600 font-extrabold mt-1 text-lg">Vice President</p>
+                            <p class="text-sm text-gray-500 mt-3 flex-grow">Oversees all project implementation,
+                                ensuring smooth coordination and execution among the core teams and departments.</p>
+                        </div>
+
+                        <div
+                            class="bg-gray-50/90 p-6 rounded-xl shadow-2xl hover:shadow-green-300/50 transition duration-300 text-center border-t-8 border-green-600 h-full flex flex-col">
+                            <img src="https://i.imgur.com/NXqEkwZ.png" alt="Secretary"
+                                class="w-28 h-28 object-cover rounded-full mx-auto mb-4 shadow-xl ring-4 ring-green-300">
+                            <h3 class="text-2xl font-bold text-gray-900">Alex Garcia</h3>
+                            <p class="text-green-600 font-extrabold mt-1 text-lg">Secretary</p>
+                            <p class="text-sm text-gray-500 mt-3 flex-grow">Manages all vital documentation, official
+                                records, meeting minutes, and internal communication within the organization.</p>
+                        </div>
+
+                        <div
+                            class="bg-gray-50/90 p-6 rounded-xl shadow-2xl hover:shadow-red-300/50 transition duration-300 text-center border-t-8 border-red-600 h-full flex flex-col">
+                            <img src="https://i.imgur.com/SLHE6nv.png" alt="Treasurer"
+                                class="w-28 h-28 object-cover rounded-full mx-auto mb-4 shadow-xl ring-4 ring-red-300">
+                            <h3 class="text-2xl font-bold text-gray-900">Elaijah Noah Co</h3>
+                            <p class="text-red-600 font-extrabold mt-1 text-lg">Treasurer</p>
+                            <p class="text-sm text-gray-500 mt-3 flex-grow">Responsible for managing the organization's
+                                finances, maintaining accurate records, and ensuring transparency in all financial
+                                transactions.</p>
+                        </div>
+
+                        <div
+                            class="bg-gray-50/90 p-6 rounded-xl shadow-2xl hover:shadow-yellow-300/50 transition duration-300 text-center border-t-8 border-yellow-600 h-full flex flex-col">
+                            <img src="https://i.imgur.com/hJZT2TK.png" alt="Kyz Gervacio"
+                                class="w-28 h-28 object-cover rounded-full mx-auto mb-4 shadow-xl ring-4 ring-yellow-300">
+                            <h3 class="text-2xl font-bold text-gray-900">Kyz Gervacio</h3>
+                            <p class="text-yellow-600 font-extrabold mt-1 text-lg">Auditor</p>
+                            <p class="text-sm text-gray-500 mt-3 flex-grow"> Ensures the accuracy and integrity of
+                                financial records by conducting impartial reviews and verifying compliance with
+                                established standards and procedures.</p>
+                        </div>
+
+                        <div
+                            class="bg-gray-50/90 p-6 rounded-xl shadow-2xl hover:shadow-green-300/50 transition duration-300 text-center border-t-8 border-green-600 h-full flex flex-col">
+                            <img src="https://i.imgur.com/4fNA5qs.png" alt="Public Information Officer"
+                                class="w-28 h-28 object-cover rounded-full mx-auto mb-4 shadow-xl ring-4 ring-green-300">
+                            <h3 class="text-2xl font-bold text-gray-900">John Paulo Mariano</h3>
+                            <p class="text-green-600 font-extrabold mt-1 text-lg">Public Information Officer</p>
+                            <p class="text-sm text-gray-500 mt-3 flex-grow">Oversees the dissemination of accurate
+                                updates, announcements, and reports to ensure clear communication between the
+                                organization and its audience.</p>
+                        </div>
+
+                        <div
+                            class="bg-gray-50/90 p-6 rounded-xl shadow-2xl hover:shadow-red-300/50 transition duration-300 text-center border-t-8 border-red-600 h-full flex flex-col">
+                            <img src="https://i.imgur.com/PwBAX7A.png" alt="Business Manager"
+                                class="w-28 h-28 object-cover rounded-full mx-auto mb-4 shadow-xl ring-4 ring-red-300">
+                            <h3 class="text-2xl font-bold text-gray-900">Fernando Wacal</h3>
+                            <p class="text-red-600 font-extrabold mt-1 text-lg">Business Manager</p>
+                            <p class="text-sm text-gray-500 mt-3 flex-grow">Directs financial planning, monitors
+                                expenditures, and coordinates resources to support the organization’s operations and
+                                growth.</p>
+                        </div>
+
+                        <div
+                            class="bg-gray-50/90 p-6 rounded-xl shadow-2xl hover:shadow-yellow-300/50 transition duration-300 text-center border-t-8 border-yellow-600 h-full flex flex-col">
+                            <img src="https://i.imgur.com/8U4AgUi.png" alt="Grade-10 Representative"
+                                class="w-28 h-28 object-cover rounded-full mx-auto mb-4 shadow-xl ring-4 ring-yellow-300">
+                            <h3 class="text-2xl font-bold text-gray-900">Adriel Singian</h3>
+                            <p class="text-yellow-600 font-extrabold mt-1 text-lg">Grade-10 Representative</p>
+                        </div>
+
+                        <div
+                            class="bg-gray-50/90 p-6 rounded-xl shadow-2xl hover:shadow-green-300/50 transition duration-300 text-center border-t-8 border-green-600 h-full flex flex-col">
+                            <img src="https://i.imgur.com/oo9kEhC.png" alt="Grade-9 Representative"
+                                class="w-28 h-28 object-cover rounded-full mx-auto mb-4 shadow-xl ring-4 ring-green-300">
+                            <h3 class="text-2xl font-bold text-gray-900">Jamyca Esperanza</h3>
+                            <p class="text-green-600 font-extrabold mt-1 text-lg">Grade-9 Representative</p>
+                        </div>
+
+                        <div
+                            class="bg-gray-50/90 p-6 rounded-xl shadow-2xl hover:shadow-red-300/50 transition duration-300 text-center border-t-8 border-red-600 h-full flex flex-col">
+                            <img src="https://i.imgur.com/uGkxO3U.png" alt="Grade-8 Representative"
+                                class="w-28 h-28 object-cover rounded-full mx-auto mb-4 shadow-xl ring-4 ring-red-300">
+                            <h3 class="text-2xl font-bold text-gray-900">Jhayruz Silvano</h3>
+                            <p class="text-red-600 font-extrabold mt-1 text-lg">Grade-8 Representative</p>
+                        </div>
+
+                        <div
+                            class="bg-gray-50/90 p-6 rounded-xl shadow-2xl hover:shadow-yellow-300/50 transition duration-300 text-center border-t-8 border-yellow-600 h-full flex flex-col">
+                            <img src="https://i.imgur.com/ltw4nVa.png" alt="Grade-7 Representative"
+                                class="w-28 h-28 object-cover rounded-full mx-auto mb-4 shadow-xl ring-4 ring-yellow-300">
+                            <h3 class="text-2xl font-bold text-gray-900">Arvie Patining</h3>
+                            <p class="text-yellow-600 font-extrabold mt-1 text-lg">Grade-7 Representative</p>
+                        </div>
+
+                       <div class="p-6 rounded-xl shadow-2xl bg-gray-800 text-white hover:shadow-gray-600/50 transition duration-300 text-center border-t-8 border-red-600 h-full flex flex-col">
+    			<img src="https://i.imgur.com/BXN7zmL.png" alt="Ms. Chastine Joy B. Cercado"class="w-28 h-28 object-cover rounded-full mx-auto mb-4 shadow-xl ring-4 ring-gray-600">
+    			<h3 class="text-2xl font-bold">Ms. Chastine Joy B. Cercado</h3>
+    <div>
+      			<span class="mt-2 mb-2 inline-block px-4 py-1 rounded-full bg-red-600 text-white text-xs font-bold uppercase tracking-widest shadow-sm">Grade 9</span>
+   </div>
+   			<p class="text-red-400 font-extrabold mt-1 text-lg">Faculty Advisor</p>
+    			<p class="text-sm text-gray-300 mt-3 flex-grow">Provides professional guidance, technical expertise, and academic supervision to ensure all TLE activities meet school standards.</p>
+</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section id="tle-faculty" class="py-20 sm:py-28 bg-white/40 backdrop-blur-md border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-20">
+            <span class="text-red-600 font-bold tracking-widest uppercase text-sm">Teachers</span>
+            <h2 class="text-5xl font-extrabold text-gray-900 mt-2 mb-6">
+                Our Professional <span class="text-red-600">TLE Educators</span>
+            </h2>
+            <div class="h-1.5 w-24 bg-red-600 mx-auto rounded-full mb-6"></div>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Dedicated mentors providing high-quality technical-vocational training for the next generation.
+            </p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-10 lg:gap-12 max-w-6xl mx-auto">
+            
+            <div class="group w-full md:w-[calc(50%-1.25rem)] lg:w-[calc(33.333%-2.5rem)] bg-white p-10 rounded-[2rem] shadow-xl border-t-[10px] border-red-600 transition-all duration-300 hover:-translate-y-3 hover:shadow-red-500/30">
+                <div class="flex flex-col items-center text-center">
+                    <img src="https://i.imgur.com/SIyogSu.png" alt="Teacher" class="w-32 h-32 rounded-full object-cover mb-6 shadow-xl ring-4 ring-gray-600 group-hover:ring-red-500 transition-colors">
+                    <h3 class="text-2xl font-black text-gray-900 leading-tight">Rachelle V. Gasco</h3>
+                    <span class="mt-2 mb-4 inline-block px-4 py-1 rounded-full bg-red-100 text-red-700 text-xs font-bold uppercase tracking-widest">Grade 7</span>
+                </div>
+            </div>
+
+            <div class="group w-full md:w-[calc(50%-1.25rem)] lg:w-[calc(33.333%-2.5rem)] bg-white p-10 rounded-[2rem] shadow-xl border-t-[10px] border-amber-500 transition-all duration-300 hover:-translate-y-3 hover:shadow-amber-500/30">
+                <div class="flex flex-col items-center text-center">
+                    <img src="https://i.imgur.com/2UkVGEY.pnghttps://i.imgur.com/SIyogSu.png" alt="Teacher" class="w-32 h-32 rounded-full object-cover mb-6 shadow-xl ring-4 ring-gray-600 group-hover:ring-amber-500 transition-colors">
+                    <h3 class="text-2xl font-black text-gray-900 leading-tight">Josephine B. Mateo</h3>
+                    <span class="mt-2 mb-4 inline-block px-4 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-bold uppercase tracking-widest">Grade 7</span>
+                </div>
+            </div>
+
+            <div class="group w-full md:w-[calc(50%-1.25rem)] lg:w-[calc(33.333%-2.5rem)] bg-white p-10 rounded-[2rem] shadow-xl border-t-[10px] border-emerald-500 transition-all duration-300 hover:-translate-y-3 hover:shadow-emerald-500/30">
+                <div class="flex flex-col items-center text-center">
+                    <img src="https://i.imgur.com/haebQee.png" alt="Teacher" class="w-32 h-32 rounded-full object-cover mb-6 shadow-xl ring-4 ring-gray-600 group-hover:ring-emerald-500 transition-colors">
+                    <h3 class="text-2xl font-black text-gray-900 leading-tight">Jenny Rose S. Espenilla</h3>
+                    <span class="mt-2 mb-4 inline-block px-4 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-widest">Grade 8</span>
+                </div>
+            </div>
+
+            <div class="group w-full md:w-[calc(50%-1.25rem)] lg:w-[calc(33.333%-2.5rem)] bg-white p-10 rounded-[2rem] shadow-xl border-t-[10px] border-blue-600 transition-all duration-300 hover:-translate-y-3 hover:shadow-blue-500/30">
+                <div class="flex flex-col items-center text-center">
+                    <img src="https://i.imgur.com/vckpXD1.png" alt="Teacher" class="w-32 h-32 rounded-full object-cover mb-6 shadow-xl ring-4 ring-gray-600 group-hover:ring-blue-500 transition-colors">
+                    <h3 class="text-2xl font-black text-gray-900 leading-tight">Pauline Abegail Tiamzon</h3>
+                    <span class="mt-2 mb-4 inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-widest">Grade 8</span>
+                </div>
+            </div>
+
+            <div class="group w-full md:w-[calc(50%-1.25rem)] lg:w-[calc(33.333%-2.5rem)] bg-white p-10 rounded-[2rem] shadow-xl border-t-[10px] border-purple-600 transition-all duration-300 hover:-translate-y-3 hover:shadow-purple-500/30">
+                <div class="flex flex-col items-center text-center">
+                    <img src="https://i.imgur.com/XSYQMR5.png" alt="Teacher" class="w-32 h-32 rounded-full object-cover mb-6 shadow-xl ring-4 ring-gray-600 group-hover:ring-purple-500 transition-colors">
+                    <h3 class="text-2xl font-black text-gray-900 leading-tight">Jhon Paulo H. Datu</h3>
+                    <span class="mt-2 mb-4 inline-block px-4 py-1 rounded-full bg-purple-100 text-purple-700 text-xs font-bold uppercase tracking-widest">Grade 10</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg font-bold mb-2">Muntindilaw National High School TLE Organization</p>
+            <p class="text-sm text-gray-400">© 2023. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // --- Mobile Menu Toggle ---
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                // Toggle icon
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenuBtn.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    `;
+                } else {
+                    mobileMenuBtn.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    `;
+                }
+            });
+
+            // Close Mobile Menu after clicking a link
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    `;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+need to add:
+-we need another section that will show the all the TLE teacher here in the school and their grade level and full name
