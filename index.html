@@ -140,10 +140,9 @@
             const feedbackForm = document.getElementById('feedback-form');
             const successMessage = document.getElementById('success-message');
             
-            // --- Mobile Menu Toggle ---
-            mobileMenuBtn.addEventListener('click', () => {
+               mobileMenuBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
-                // Change icon to 'X' when open
+                // Toggle icon
                 if (!mobileMenu.classList.contains('hidden')) {
                     mobileMenuBtn.innerHTML = `
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -151,7 +150,6 @@
                         </svg>
                     `;
                 } else {
-                    // Change icon back to Hamburger when closed
                     mobileMenuBtn.innerHTML = `
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -159,23 +157,19 @@
                     `;
                 }
             });
-
-            // --- Close Mobile Menu after clicking a link ---
-            navLinks.forEach(link => {
+            
+            // Close Mobile Menu after clicking a link
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
                 link.addEventListener('click', () => {
-                    // Only close if it's currently open (i.e., not hidden)
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                        // Reset button icon
-                        mobileMenuBtn.innerHTML = `
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                            </svg>
-                        `;
-                    }
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    `;
                 });
             });
-
+        });
            
     </script>
 </body>
