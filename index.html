@@ -33,6 +33,12 @@
             padding-top: 5rem;
             padding-bottom: 5rem;
         }
+		 img {
+    		max-width: 100%;
+   			height: auto;
+    		display: block;
+		}
+
     </style>
 </head>
 <body>
@@ -61,13 +67,25 @@
                 <a href="feedback.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Feedback</a>
             </nav>
 
-            <!-- Mobile Menu Button -->
+              <!-- Mobile Menu Button -->
             <button id="mobile-menu-btn" class="md:hidden p-2 text-blue-700 hover:text-red-600 focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
             </button>
         </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-home.html" class="block px-3 py-2 rounded-md text-base font-medium text-red-600 bg-gray-50">Home</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-officer%20page.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">About</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-ACTIVITIES.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Events</a>
+                <a href="#other" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Other Info</a>
+                <a href="#feedback" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Feedback</a>
+            </div>
+        </div>
+
         </div>
     </header>
 
