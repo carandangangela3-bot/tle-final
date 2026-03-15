@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLE Organization | Muntindilaw National High School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+     <style>
+        body {
+            font-family: 'Inter', sans-serif;
+	    background-image: url('https://i.imgur.com/x15DQz6.jpeg'); 
+            background-size: cover; 
+            background-position: center;  
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-color: #f7f7f7; 
+            position: relative;
+        }
+        
+            body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.4); 
+            z-index: -1;
+        }
+
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header" class="sticky top-0 z-50 bg-white border-b border-yellow-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-3">
+            <!-- Logo and Title -->
+              <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-home.html" class="flex items-center space-x-3">
+              <img src="https://i.imgur.com/UumgAmR.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="DEPED Logo" class="h-10 w-auto rounded-full shadow-md">
+
+	   <img src="https://i.imgur.com/ezYRCVu.jpeg" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="MNHS Logo" class="h-10 w-auto rounded-full shadow-md">
+
+           <img src="https://i.imgur.com/JwTUE7y.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="TLE Logo" class="h-10 w-auto rounded-full shadow-md">
+                <span class="text-xl font-extrabold tracking-tight text-gray-900 hidden sm:block">
+                    Muntindilaw <span class="text-red-600">TLE</span> Org.
+                </span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-home.html" class="nav-link text-red-600 font-bold transition duration-150">Home</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE-ORG-officer-page.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">About</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-ACTIVITIES.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Events</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-VMC.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Join TLE</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-feedback.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Feedback</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-blue-700 hover:text-red-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-home.html" class="block px-3 py-2 rounded-md text-base font-medium text-red-600 bg-gray-50">Home</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-officer%20page.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">About</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-ACTIVITIES.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Events</a>
+                <a href="#other" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Other Info</a>
+                <a href="#feedback" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Feedback</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Home Section (Hero) -->
+        <section id="home" class="section-padding bg-transparent"> 
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-white/80 rounded-xl p-8 shadow-2xl"> 
+                <div class="flex flex-col lg:flex-row items-center justify-center lg:space-x-12">
+                    <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <img src="https://i.imgur.com/JwTUE7y.png" onerror="this.onerror=null;this.src='https://placehold.co/300x300/fecaca/991b1b?text=TLE+Logo'" alt="TLE Organization Main Logo" class="w-64 h-64 mx-auto object-contain rounded-full shadow-xl ring-8 ring-yellow-400/50">
+                    </div>
+                    
+                    <div class="lg:w-1/2 text-center lg:text-left">
+                        <span class="text-sm font-semibold tracking-wider uppercase text-blue-600">
+                            Muntindilaw National High School
+                        </span>
+                        <h1 class="mt-4 text-4xl sm:text-6xl font-extrabold text-gray-900 leading-tight">
+                            Pioneering <span class="text-red-600">Technology</span> & Livelihood Education
+                        </h1>
+                        <p class="mt-6 text-lg text-gray-600 max-w-xl lg:max-w-none mx-auto lg:mx-0">
+                            Empowering students with essential skills in Agri-Fishery, Home Economics, ICT, and Industrial Arts for a brighter future.
+                        </p>
+                        
+                        <div class="mt-8 space-y-4 sm:space-y-0 sm:flex sm:justify-center lg:justify-start sm:space-x-4">
+                            <!-- Link to Activities Page -->
+                            <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-ACTIVITIES.html" " class="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white bg-red-600 hover:bg-red-700 transform transition duration-300 hover:scale-105">
+                                Explore Our Events
+                            </a>
+                            <!-- Link to Officers Page -->
+                            <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE-ORG-officer-page.html#officers-detail" class="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3 border border-red-600 text-base font-medium rounded-full shadow-lg text-red-600 bg-white hover:bg-red-50 transform transition duration-300 hover:scale-105">
+                                Meet Our Team
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+          </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg font-bold mb-2">Muntindilaw National High School TLE Organization</p>
+            <p class="text-sm text-gray-400">&copy; 2023. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('.nav-link, #mobile-menu a');
+            const feedbackForm = document.getElementById('feedback-form');
+            const successMessage = document.getElementById('success-message');
+            
+            // --- Mobile Menu Toggle ---
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                // Change icon to 'X' when open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenuBtn.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    `;
+                } else {
+                    // Change icon back to Hamburger when closed
+                    mobileMenuBtn.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    `;
+                }
+            });
+
+            // --- Close Mobile Menu after clicking a link ---
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Only close if it's currently open (i.e., not hidden)
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        // Reset button icon
+                        mobileMenuBtn.innerHTML = `
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        `;
+                    }
+                });
+            });
+
+           
+    </script>
+</body>
+</html>
