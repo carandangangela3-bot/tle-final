@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities | TLE Organization</title>
+    
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter Font --><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+     <style>
+        body {
+            font-family: 'Inter', sans-serif;
+	    background-image: url('https://i.imgur.com/x15DQz6.jpeg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-color: #f7f7f7; 
+            position: relative;
+        }
+        
+            body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.4); 
+            z-index: -1;
+        }
+
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header" class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-red-500/20 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-3">
+            
+            <!-- Logo and Title -->
+           <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-home.html" class="flex items-center space-x-3">
+              <img src="https://i.imgur.com/UumgAmR.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="DEPED Logo" class="h-10 w-auto rounded-full shadow-md">
+
+	   <img src="https://i.imgur.com/ezYRCVu.jpeg" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="MNHS Logo" class="h-10 w-auto rounded-full shadow-md">
+
+           <img src="https://i.imgur.com/JwTUE7y.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="TLE Logo" class="h-10 w-auto rounded-full shadow-md">
+                <span class="text-xl font-extrabold tracking-tight text-gray-900 hidden sm:block">
+                    Muntindilaw <span class="text-red-600">TLE</span> Org.
+                </span>
+            </a>
+
+               <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-home.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Home</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE-ORG-officer-page.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">About</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-ACTIVITIES.html" class="nav-link text-red-600 font-bold transition duration-150">Events</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-VMC.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Join TLE</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-feedback.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Feedback</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700 hover:text-red-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-home.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Home</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE-ORG-officer-page.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">About</a>
+                <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-ACTIVITIES.html" class="block px-3 py-2 rounded-md text-base font-medium text-red-600 bg-gray-50">Events</a>
+                  <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-VMC.html" class="nav-link text-red-600 font-bold hover:text-red-600 transition duration-150">Join TLE</a>
+                <a href="index.html#feedback" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Feedback</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Activities Content Section -->
+        <section id="activities-content" class="section-padding bg-white/80"> 
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-5xl font-extrabold text-gray-900 text-center mb-4">
+                    Our <span class="text-blue-600">Events</span>
+                </h2>
+                <p class="text-center text-xl text-gray-600 mb-16 max-w-4xl mx-auto">
+                    A list of our most impactful and recent projects designed to build practical and livelihood skills for our TLE students.
+                </p>
+
+                <div class="space-y-10">
+                    <!-- Activity 1 -->
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-lg border-l-8 border-red-600 grid md:grid-cols-3 gap-6 items-center">
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold text-red-600 mt-1 mb-3">Nutri Jingle Dance Contest</h3>
+                            <p class="text-gray-600"> We chose this event because music and dancing easily catch everyone’s attention and help promote a fun and active lifestyle. It’s the perfect way to hype up students for the whole celebration!</p>
+                            <p class="text-sm text-gray-500 mt-3 font-medium">Date: July 22 2025 | Participants: 45 Students | Covered Court Area</p>
+                        </div>
+                        <div class="md:col-span-1">
+                            <img src="https://i.imgur.com/2oY60ly.png" 
+				 alt="Nutri Jingle Dance Contest" class="w-full h-auto rounded-lg shadow-md cursor-pointer"
+     				 onclick="openModal('activity1')">
+                        </div>
+                    </div>
+
+                    <!-- Activity 2 -->
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-lg border-l-8 border-blue-600 grid md:grid-cols-3 gap-6 items-center">
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold text-blue-600 mt-1 mb-3"> Infomercial Contest</h3>
+                            <p class="text-gray-600">Students will use their ideas and digital skills to spread awareness about eating healthy. Since social media is a big part of our lives, this activity teaches everyone to share helpful information online in a fun and catchy way.</p>
+                            <p class="text-sm text-gray-500 mt-3 font-medium">Date: July 23 2025 | Participants: 60 Students | JHS ICT Lab</p>
+                        </div>
+                        <div class="md:col-span-1">
+                            <img src="https://i.imgur.com/X08ZncI.png" alt="Infomercial Contest" class="w-full h-auto rounded-lg shadow-md cursor-pointer"
+     				 onclick="openModal('activity2')">
+                        </div>
+                    </div>
+
+                    <!-- Activity 3 -->
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-lg border-l-8 border-green-600 grid md:grid-cols-3 gap-6 items-center">
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold text-green-600 mt-1 mb-3"> On-the-Spot Non-Digital and Digital Poster Mmaking Contest</h3>
+                            <p class="text-gray-600"> Non-Digital entries at the Covered Court Area and Digital entries again at the JHS ICT Lab. Art is a powerful tool, and through posters, students can show messages about ealth that are easy to understand and inspiring to look at.</p>
+                            <p class="text-sm text-gray-500 mt-3 font-medium">Date: July 25 2025 | Participants: 35 Students | JHS ICT Lab</p>
+                        </div>
+                        <div class="md:col-span-1">
+                            <img src="https://i.imgur.com/0uY7nqO.png" alt="Poster Mmaking Contest" class="w-full h-auto rounded-lg shadow-md cursor-pointer"
+     				 onclick="openModal('activity3')">
+                        </div>
+                    </div>
+ 		  
+		  <!-- Activity 4 -->
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-lg border-l-8 border-red-600 grid md:grid-cols-3 gap-6 items-center">
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold text-red-600 mt-1 mb-3">Nutri Zumba Week</h3>
+                            <p class="text-gray-600"> We included this event because stayingg active is just as important as eating right. Plus, dancing together helps students enjoy exercise, bond with friends, and relieve stress.</p>
+                            <p class="text-sm text-gray-500 mt-3 font-medium">Date: July 28 to 31 2025 | Participants: 45 Students | Covered Court Area</p>
+                        </div>
+                        <div class="md:col-span-1">
+                            <img src="https://i.imgur.com/m2DY9OW.png" alt="Nutri Zumba Week" class="w-full h-auto rounded-lg shadow-md cursor-pointer"
+     				 onclick="openModal('activity4')">
+                        </div>
+                    </div>
+
+		<!-- Activity 5 -->
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-lg border-l-8 border-blue-600 grid md:grid-cols-3 gap-6 items-center">
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold text-blue-600 mt-1 mb-3">Nutribooth Exhibit: “Mas Healthy, Mas Panalo!” </h3>
+                            <p class="text-gray-600">Here, booths will showcase healthy choices and smart habits. It’s a fun way to explore different foods an nutrition ideas hands-on!</p>
+                            <p class="text-sm text-gray-500 mt-3 font-medium">Date: August 1 2025 | Participants: 60 Students | Covered Court Area</p>
+                        </div>
+                        <div class="md:col-span-1">
+                            <img src="https://i.imgur.com/vuEZPVB.png" alt="Nutribooth Exhibit" class="w-full h-auto rounded-lg shadow-md cursor-pointer"
+     				 onclick="openModal('activity5')">
+
+                        </div>
+                    </div>
+
+ 		<!-- Activity 6 -->
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-lg border-l-8 border-green-600 grid md:grid-cols-3 gap-6 items-center">
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold text-green-600 mt-1 mb-3">Nutri King & Queen 2025</h3>
+                            <p class="text-gray-600">This event is a reminder that true beauty comes from being healthy, confident, and active. It’s the perfect way to end the celebration while recognizing students who promote good nutrition inside and outside the school.</p>
+                            <p class="text-sm text-gray-500 mt-3 font-medium">Date: August 1 2025 | Participants: 35 Students | Covered Court Area</p>
+                        </div>
+                        <div class="md:col-span-1">
+                            <img src="https://i.imgur.com/hKLiqZF.png" alt="Nutri King & Queen 2025" class="w-full h-auto rounded-lg shadow-md cursor-pointer"
+     				 onclick="openModal('activity6')">
+                        </div>
+                    </div>
+ 		  
+
+                </div>
+
+                <div class="text-center mt-16">
+                    <a href="file:///C:/Users/Angela/OneDrive/Desktop/TLE%20ORG-home.html" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white bg-red-600 hover:bg-red-700 transform transition duration-300 hover:scale-105">
+                        Back to Homepage
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Reusable Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg font-bold mb-2">Muntindilaw National High School TLE Organization</p>
+            <p class="text-sm text-gray-400">&copy; 2023. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+          
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                // Toggle icon
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenuBtn.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    `;
+                } else {
+                    mobileMenuBtn.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    `;
+                }
+            });
+            
+            // Close Mobile Menu after clicking a link
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    `;
+                });
+            });
+        });
+function openModal(activity) {
+    const modal = document.getElementById("modalOverlay");
+    const box = document.getElementById("modalBox");
+    const content = document.getElementById("modalContent"); 		
+
+    if (activity === "activity1") {
+    content.innerHTML = `
+          <h3 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500 text-center mb-8 drop-shadow-sm">
+   Nutri Jingle Dance Winners
+</h3>
+<div class="mb-10">
+   <div class="mb-12">
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="group relative p-6 bg-white border-b-4 border-yellow-400 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+            <p class="font-black text-yellow-500 text-sm uppercase tracking-widest mb-1">Champion 🥇</p>
+            <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+            <p class="font-black text-xl text-gray-800 leading-tight">WALING-WALING</p>
+            <p class="text-indigo-500 font-medium mt-2 text-sm bg-indigo-50 rounded-full py-1">Grade 7</p>
+        </div>
+
+        <div class="group relative p-6 bg-white border-b-4 border-gray-300 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+            <p class="font-black text-gray-400 text-sm uppercase tracking-widest mb-1">2nd Place 🥈</p>
+            <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+            <p class="font-black text-xl text-gray-800 leading-tight">RAFLESSIA</p>
+            <p class="text-indigo-500 font-medium mt-2 text-sm bg-indigo-50 rounded-full py-1">Grade 7</p>
+        </div>
+
+        <div class="group relative p-6 bg-white border-b-4 border-orange-300 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+            <p class="font-black text-orange-400 text-sm uppercase tracking-widest mb-1">3rd Place 🥉</p>
+            <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+            <p class="font-black text-xl text-gray-800 leading-tight">ILANG-ILANG</p>
+            <p class="text-indigo-500 font-medium mt-2 text-sm bg-indigo-50 rounded-full py-1">Grade 8</p>
+        </div>
+    </div>
+</div>
+
+        `;
+    }
+
+    if (activity === "activity2") {
+        content.innerHTML = `
+           <div class="mb-10">
+  <h3 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-500 text-center mb-8 drop-shadow-sm">
+   Infomercial Winners
+</h3>
+<div class="mb-10">
+   <div class="mb-12">
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="group relative p-6 bg-white border-b-4 border-yellow-400 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+            <p class="font-black text-yellow-500 text-sm uppercase tracking-widest mb-1">Champion 🥇</p>
+            <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+            <p class="font-black text-xl text-gray-800 leading-tight">SULTAN KUDARAT</p>
+            <p class="text-indigo-500 font-medium mt-2 text-sm bg-indigo-50 rounded-full py-1">Grade 8</p>
+        </div>
+
+        <div class="group relative p-6 bg-white border-b-4 border-gray-300 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+            <p class="font-black text-gray-400 text-sm uppercase tracking-widest mb-1">2nd Place 🥈</p>
+            <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+            <p class="font-black text-xl text-gray-800 leading-tight">LAPU-LAPU</p>
+            <p class="text-indigo-500 font-medium mt-2 text-sm bg-indigo-50 rounded-full py-1">Grade 7</p>
+        </div>
+
+        <div class="group relative p-6 bg-white border-b-4 border-orange-300 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+            <p class="font-black text-orange-400 text-sm uppercase tracking-widest mb-1">3rd Place 🥉</p>
+            <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+            <p class="font-black text-xl text-gray-800 leading-tight">GABRIELA SILANG</p>
+            <p class="text-indigo-500 font-medium mt-2 text-sm bg-indigo-50 rounded-full py-1">Grade 8</p>
+        </div>
+    </div>
+</div>
+        `;
+    }
+if (activity === "activity3") {
+        content.innerHTML = `
+    <h3 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-yellow-500 text-center mb-8 drop-shadow-sm">
+    Non-Digital and Digital Poster Making Contest
+</h3>
+
+<!-- DIGITAL POSTER -->
+<div class="mb-10">
+   <div class="mb-12">
+    <h4 class="text-xm font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-500 text-center mb-8 drop-shadow-sm">
+        🎨 Digital Poster Making Winners
+    </h4>
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="group relative p-6 bg-white border-b-4 border-yellow-400 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+            <p class="font-black text-yellow-500 text-sm uppercase tracking-widest mb-1">Champion 🥇</p>
+            <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+            <p class="font-black text-xl text-gray-800 leading-tight">ALEYASHAI CORONADO</p>
+            <p class="text-indigo-500 font-medium mt-2 text-sm bg-indigo-50 rounded-full py-1">Grade 10 – Tipolo</p>
+        </div>
+
+        <div class="group relative p-6 bg-white border-b-4 border-gray-300 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+            <p class="font-black text-gray-400 text-sm uppercase tracking-widest mb-1">2nd Place 🥈</p>
+            <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+            <p class="font-black text-xl text-gray-800 leading-tight">REIVER KLYNT ALENCIA</p>
+            <p class="text-indigo-500 font-medium mt-2 text-sm bg-indigo-50 rounded-full py-1">Grade 10 – Tipolo</p>
+        </div>
+
+        <div class="group relative p-6 bg-white border-b-4 border-orange-300 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+            <p class="font-black text-orange-400 text-sm uppercase tracking-widest mb-1">3rd Place 🥉</p>
+            <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+            <p class="font-black text-xl text-gray-800 leading-tight">CHARMAINE JULES LAZARO</p>
+            <p class="text-indigo-500 font-medium mt-2 text-sm bg-indigo-50 rounded-full py-1">Grade 12 – HUMSS Google</p>
+        </div>
+    </div>
+</div>
+<h3 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-500 text-center mb-8 drop-shadow-sm">
+        🖌️ Poster Making Winners
+    </h3>
+
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="group relative p-6 bg-white border-b-4 border-yellow-400 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+            <p class="font-black text-yellow-600 text-sm uppercase mb-1">1st Place 🥇</p>
+ 	    <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+            <p class="font-black text-lg text-gray-800">AQUISHA LORRAINE PALOMADO</p>
+            <p class="text-indigo-500 font-medium mt-2 text-sm bg-indigo-50 rounded-full py-1">_</p>
+
+        </div>
+
+       <div class="group relative p-6 bg-white border-b-4 border-gray-300 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+            <p class="font-black text-gray-500 text-sm uppercase mb-1">2nd Place 🥈</p>
+	    <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+            <p class="font-black text-lg text-gray-800">LIERRA ELLO</p>
+            <p class="text-indigo-500 font-medium mt-2 text-sm bg-indigo-50 rounded-full py-1">_</p>
+
+        </div>
+
+        <div class="group relative p-6 bg-white border-b-4 border-orange-300 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+            <p class="font-black text-orange-500 text-sm uppercase mb-1">3rd Place 🥉</p>
+	    <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+            <p class="font-black text-lg text-gray-800">SOPHIA SISMUNDO</p>
+            <p class="text-indigo-500 font-medium mt-2 text-sm bg-indigo-50 rounded-full py-1">_</p>
+
+        </div>
+    </div>
+</div>
+ 
+     `;
+    }
+if (activity === "activity4") {
+        content.innerHTML = `
+           <div class="mb-10">
+<h2 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500 mb-8 text-center drop-shadow-sm">
+    Nutri Zumba Winners
+</h2>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center mb-12">
+    <div class="group relative p-6 bg-white border-b-4 border-yellow-400 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+        <p class="font-black text-yellow-600 text-sm uppercase mb-1">1st Place 🥇</p>
+        <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+        <p class="font-black text-lg text-gray-800">Grade 10</p>
+    </div>
+
+    <div class="group relative p-6 bg-white border-b-4 border-gray-300 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+        <p class="font-black text-gray-500 text-sm uppercase mb-1">2nd Place 🥈</p>
+        <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+        <p class="font-black text-lg text-gray-800">Grade 7</p>
+    </div>
+
+    <div class="group relative p-6 bg-white border-b-4 border-orange-300 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+        <p class="font-black text-orange-500 text-sm uppercase mb-1">3rd Place 🥉</p>
+        <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+        <p class="font-black text-lg text-gray-800">Grade 9</p>
+    </div>
+
+    <div class="group relative p-6 bg-white border-b-4 border-orange-300 rounded-xl shadow-md hover:shadow-indigo-100 hover:shadow-2xl transition-all duration-300">
+        <p class="font-black text-orange-500 text-sm uppercase mb-1">4th Place</p>
+        <div class="h-px w-12 bg-gray-200 mx-auto mb-3"></div>
+        <p class="font-black text-lg text-gray-800">Grade 8</p>
+    </div>
+</div>
+
+<h3 class="text-2xl font-bold mb-4 text-gray-800 flex items-center">
+    <span class="mr-2"></span>Documentary:
+</h3>
+
+
+<div class="grid grid-cols-2 gap-4 bg-gray-100 p-4 rounded-xl">
+    <img src="https://i.imgur.com/T18fdj0.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+    <img src="https://i.imgur.com/PeeFt5p.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+    <img src="https://i.imgur.com/tXVz2U2.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+    <img src="https://i.imgur.com/e0wdiwK.png" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+    <img src="https://i.imgur.com/fohw1lY.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+    <img src="https://i.imgur.com/LvFPsKu.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+    <img src="https://i.imgur.com/dDNYdEA.png" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+    <img src="https://i.imgur.com/ph0JCAT.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+</div>
+</div>
+
+        `;
+    }
+if (activity === "activity5") {
+    content.innerHTML = `
+      <h2 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-500 mb-8 text-center drop-shadow-sm">
+    Nutri Booth Winners
+</h2>
+
+  <div class="grid grid-cols-3 gap-4 items-start text-sm">
+      <div class="text-center group">
+        <div class="relative mb-2">
+            <img src="https://i.imgur.com/dyn1o92.png" class="w-40 h-40 object-cover rounded-2xl mx-auto border-4 border-yellow-400 shadow-lg group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute -top-2 -right-2 bg-yellow-400 text-white text-xs px-2 py-1 rounded-full font-bold shadow-md">TOP 1</span>
+        </div>
+        <p class="font-bold text-yellow-600 text-base">1st Place 🥇</p>
+        <p class="font-black text-gray-800">ABM-AMAZON</p>
+        <p class="text-blue-600 font-medium">Grade 12</p>
+      </div>
+
+      <div class="text-center group">
+        <img src="https://i.imgur.com/vT14znB.png" class="w-40 h-40 object-cover rounded-2xl mx-auto mb-2 border-4 border-gray-300 shadow-md group-hover:scale-105 transition-transform duration-300">
+        <p class="font-bold text-gray-500 text-base">2nd Place 🥈</p>
+        <p class="font-bold text-gray-800">ABM-SAFARI</p>
+        <p class="text-blue-600 font-medium">Grade 11</p>
+      </div>
+
+      <div class="text-center group">
+        <img src="https://i.imgur.com/kIorioZ.png" class="w-40 h-40 object-cover rounded-2xl mx-auto mb-2 border-4 border-orange-300 shadow-md group-hover:scale-105 transition-transform duration-300">
+        <p class="font-bold text-orange-600 text-base">3rd Place 🥉</p>
+        <p class="font-bold text-gray-800">HUMSS-GOOGLE</p>
+        <p class="text-blue-600 font-medium">Grade 12</p>
+      </div>
+    </div>
+
+<h3 class="text-2xl font-bold mb-4 text-gray-800 flex items-center">
+    <span class="mr-2"></span>Documentary:
+</h3>
+
+<div class="grid grid-cols-2 gap-4 bg-gray-100 p-4 rounded-xl">
+    <img src="https://i.imgur.com/nZ3fMN3.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+    <img src="https://i.imgur.com/Poncnu3.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+    <img src="https://i.imgur.com/ocJaZT9.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+    <img src="https://i.imgur.com/NBIY6ar.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+    <img src="https://i.imgur.com/MBLOcNb.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+</div>
+</div>
+
+        `;
+    }
+if (activity === "activity6") {
+        content.innerHTML = `
+            <h2 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-yellow-500 mb-6 text-center drop-shadow-sm">
+    Nutri King & Queen 2025
+</h2>
+
+<div class="bg-white p-6 rounded-xl mb-8 shadow-inner border border-green-100">
+  <h3 class="font-bold text-2xl mb-6 text-green-800 flex items-center">
+    <span class="mr-2">✨</span> Official Winners
+  </h3>
+
+  <div class="mb-8">
+    <div class="bg-blue-50 py-1 px-4 rounded-full inline-block mb-4">
+        <h4 class="font-bold text-blue-700 uppercase tracking-wider text-sm">Mr. Nutrition</h4>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4 items-start text-sm">
+      <div class="text-center group">
+        <div class="relative mb-2">
+            <img src="https://i.imgur.com/vhIVoUa.jpeg" class="w-40 h-40 object-cover rounded-2xl mx-auto border-4 border-yellow-400 shadow-lg group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute -top-2 -right-2 bg-yellow-400 text-white text-xs px-2 py-1 rounded-full font-bold shadow-md">TOP 1</span>
+        </div>
+        <p class="font-bold text-yellow-600 text-base">Champion 👑</p>
+        <p class="font-black text-gray-800">LANCE RUDOLF TARINGTING</p>
+        <p class="text-blue-600 font-medium">Grade 10</p>
+      </div>
+
+      <div class="text-center group">
+        <img src="https://i.imgur.com/KJyBztX.jpeg" class="w-40 h-40 object-cover rounded-2xl mx-auto mb-2 border-4 border-gray-300 shadow-md group-hover:scale-105 transition-transform duration-300">
+        <p class="font-bold text-gray-500 text-base">1st Runner-up 🥇</p>
+        <p class="font-bold text-gray-800">PRINCE PHILIP BURCE</p>
+        <p class="text-blue-600 font-medium">Grade 12</p>
+      </div>
+
+      <div class="text-center group">
+        <img src="https://i.imgur.com/jpLNwj2.jpeg" class="w-40 h-40 object-cover rounded-2xl mx-auto mb-2 border-4 border-orange-300 shadow-md group-hover:scale-105 transition-transform duration-300">
+        <p class="font-bold text-orange-600 text-base">2nd Runner-up 🥈</p>
+        <p class="font-bold text-gray-800">RODNIE BRIX OLIVIA</p>
+        <p class="text-blue-600 font-medium">Grade 7</p>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="bg-pink-50 py-1 px-4 rounded-full inline-block mb-4">
+        <h4 class="font-bold text-pink-700 uppercase tracking-wider text-sm">Ms. Nutrition</h4>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4 items-start text-sm">
+      <div class="text-center group">
+        <div class="relative mb-2">
+            <img src="https://i.imgur.com/H4W3ktA.jpeg" class="w-40 h-40 object-cover rounded-2xl mx-auto border-4 border-yellow-400 shadow-lg group-hover:scale-105 transition-transform duration-300">
+            <span class="absolute -top-2 -right-2 bg-yellow-400 text-white text-xs px-2 py-1 rounded-full font-bold shadow-md">TOP 1</span>
+        </div>
+        <p class="font-bold text-yellow-600 text-base">Champion 👑</p>
+        <p class="font-black text-gray-800">ALIAH KATE MILLOSA</p>
+        <p class="text-pink-600 font-medium">Grade 10</p>
+      </div>
+
+      <div class="text-center group">
+        <img src="https://i.imgur.com/bKSnEz4.jpeg" class="w-40 h-40 object-cover rounded-2xl mx-auto mb-2 border-4 border-gray-300 shadow-md group-hover:scale-105 transition-transform duration-300">
+        <p class="font-bold text-gray-500 text-base">1st Runner-up 🥇</p>
+        <p class="font-bold text-gray-800">RONIA RIZPAH GAPUZ</p>
+        <p class="text-pink-600 font-medium">Grade 7</p>
+      </div>
+
+      <div class="text-center group">
+        <img src="https://i.imgur.com/wZVPag7.jpeg" class="w-40 h-40 object-cover rounded-2xl mx-auto mb-2 border-4 border-orange-300 shadow-md group-hover:scale-105 transition-transform duration-300">
+        <p class="font-bold text-orange-600 text-base">2nd Runner-up 🥈</p>
+        <p class="font-bold text-gray-800">AIGIELLAINE BRONDIAL</p>
+        <p class="text-pink-600 font-medium">Grade 12</p>
+      </div>
+    </div>
+</div>
+
+<h3 class="text-2xl font-bold mt-8 mb-4 text-gray-800 flex items-center">
+    <span class="bg-green-600 p-1 rounded mr-2">📸</span> Event Gallery
+</h3>
+
+<div class="grid grid-cols-2 gap-4 bg-gray-100 p-4 rounded-xl">
+ 		<img src="https://i.imgur.com/ADRJZ2q.jpg"  class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">	
+		<img src="https://i.imgur.com/jjk2Wxz.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/MOvMDqp.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+   		<img src="https://i.imgur.com/s76RCVM.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/pz0Upxo.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/WzpFbYZ.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/zQX08J0.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/o3FJdNx.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/gZma0Ky.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/8RKXyy3.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/HD5luoy.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/h7qgQpq.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/1o2BSRp.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/fD5QmXA.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/vV7oOmE.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/sFxJaGD.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/S9hp5Wc.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/3kdXT6R.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/vHFU70w.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/omesIEY.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/k5acMkO.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/xkllcSI.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/1RKNRu9.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/F4IVrMZ.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/WyUE9oK.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+		<img src="https://i.imgur.com/yJDFe2h.jpeg" class="w-full h-40 object-cover rounded-lg shadow-md hover:opacity-90 transition duration-300 border-2 border-white">
+
+    </div>
+
+<div class="mt-10 p-4 bg-green-900 rounded-2xl shadow-2xl">
+    <h3 class="text-xl font-bold text-white mb-3 flex items-center">
+        <span class="mr-2">🎥</span> Highlights Reel
+    </h3>
+    <iframe
+      src="https://drive.google.com/file/d/1MCeQj0_G7jpAmyMzyjzcWOvue7NASp0x/preview"
+      class="w-full h-72 rounded-lg"
+      allow="autoplay">
+    </iframe>
+</div>
+        `;
+    }
+
+modal.classList.remove("hidden");
+    modal.classList.add("flex");
+
+setTimeout(() => {
+        box.classList.remove("scale-95", "opacity-0");
+        box.classList.add("scale-100", "opacity-100");
+    }, 10);
+}
+
+function closeModal() {
+    const modal = document.getElementById("modalOverlay");
+    const box = document.getElementById("modalBox");
+
+    box.classList.add("scale-95", "opacity-0");
+    box.classList.remove("scale-100", "opacity-100");
+
+    setTimeout(() => {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+    }, 300);
+}
+</script>
+
+<div id="modalOverlay"
+     class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-50">
+
+    <div id="modalBox"
+         class="bg-white rounded-2xl max-w-4xl w-full mx-4 p-6 relative 
+                overflow-y-auto max-h-[90vh] shadow-2xl
+                transform scale-95 opacity-0 transition-all duration-300">
+
+        <button onclick="closeModal()"
+                class="absolute top-4 right-4 text-gray-500 hover:text-red-600 text-3xl font-bold">
+            &times;
+        </button>
+
+        <div id="modalContent"></div>
+    </div>
+</div>
+</body>
+</html>
