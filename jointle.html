@@ -1,226 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join TLE</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    
-    <style>
-        @keyframes pump {
-            0%   { transform: scale(1); }
-            50%  { transform: scale(1.08); }
-            100% { transform: scale(1); }
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join TLE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        @keyframes pump {
+            0%   { transform: scale(1); }
+            50%  { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
 
-        .pump-btn:hover {
-            animation: pump 0.4s ease-in-out;
-        }
-  
-        body {
-            font-family: 'Inter', sans-serif;
-            background-image: url('https://i.imgur.com/x15DQz6.jpeg'); 
-            background-size: cover; 
-            background-position: center; 
-            background-repeat: no-repeat; 
-            background-attachment: fixed; 
-            background-color: #f7f7f7; 
-            position: relative;
-        }
-        
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.4); 
-            z-index: -1;
-        }
+        .pump-btn:hover {
+            animation: pump 0.4s ease-in-out;
+        }
+  
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url('https://i.imgur.com/x15DQz6.jpeg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-color: #f7f7f7; 
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.4); 
+            z-index: -1;
+        }
 
-        .section-padding {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-        }
-    </style>
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    </style>
 </head>
 <body>
 
-    <header id="header" class="sticky top-0 z-50 bg-white border-b border-red-500/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-3">
-            <a href="index.html" class="flex items-center space-x-3">
-                <img src="https://i.imgur.com/UumgAmR.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="DEPED Logo" class="h-10 w-auto rounded-full shadow-md">
-                <img src="https://i.imgur.com/ezYRCVu.jpeg" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="MNHS Logo" class="h-10 w-auto rounded-full shadow-md">
-                <img src="https://i.imgur.com/JwTUE7y.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="TLE Logo" class="h-10 w-auto rounded-full shadow-md">
-                <span class="text-xl font-extrabold tracking-tight text-gray-900 hidden sm:block">
-                    Muntindilaw <span class="text-red-600">TLE</span> Org.
-                </span>
-            </a>
+    <header id="header" class="sticky top-0 z-50 bg-white border-b border-red-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-3">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="https://i.imgur.com/UumgAmR.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="DEPED Logo" class="h-10 w-auto rounded-full shadow-md">
+                <img src="https://i.imgur.com/ezYRCVu.jpeg" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="MNHS Logo" class="h-10 w-auto rounded-full shadow-md">
+                <img src="https://i.imgur.com/JwTUE7y.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="TLE Logo" class="h-10 w-auto rounded-full shadow-md">
+                <span class="text-xl font-extrabold tracking-tight text-gray-900 hidden sm:block">
+                    Muntindilaw <span class="text-red-600">TLE</span> Org.
+                </span>
+            </a>
 
-            <nav class="hidden md:flex space-x-6 font-medium"> 
-                <a href="index.html" class="nav-link text-gray-700 transition duration-150">Home</a>
-                <a href="about.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">About</a>
-                <a href="events.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Events</a>
-                <a href="jointle.html" class="nav-link text-red-600 font-bold hover:text-red-600 transition duration-150">Join TLE</a>
-                <a href="feedback.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Feedback</a>
-            </nav>
-            
-             <button id="mobile-menu-btn" class="md:hidden p-2 text-blue-700 hover:text-red-600 focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
-        </div>
+            <nav class="hidden md:flex space-x-6 font-medium"> 
+                <a href="index.html" class="nav-link text-gray-700 transition duration-150">Home</a>
+                <a href="about.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">About</a>
+                <a href="events.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Events</a>
+                <a href="jointle.html" class="nav-link text-red-600 font-bold hover:text-red-600 transition duration-150">Join TLE</a>
+                <a href="feedback.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Feedback</a>
+            </nav>
+            
+             <button id="mobile-menu-btn" class="md:hidden p-2 text-blue-700 hover:text-red-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
-                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-red-600 bg-gray-50">Home</a>
-                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">About</a>
-                <a href="events.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Events</a>
-                <a href="jointle.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Join TLE</a>
-                <a href="feedback.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Feedback</a>
-            </div>
-        </div>
-    </header>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Home</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">About</a>
+                <a href="events.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Events</a>
+                <a href="jointle.html" class="block px-3 py-2 rounded-md text-base font-medium text-red-600 bg-gray-50">Join TLE</a>
+                <a href="feedback.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Feedback</a>
+            </div>
+        </div>
+    </header>
 
-    <section id="vision-mission-values" class="section-padding bg-white/80">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 text-center mb-4">
-                Join the <span class="text-red-600">TLE</span> Organization
-            </h1>
-            <p class="text-center text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-                Please fill out the form below to apply as a member of the TLE Organization.
-                Make sure all information is correct and complete.
-            </p>
+    <section id="jointle" class="section-padding flex justify-center items-center">
+        <div class="max-w-xl w-full mx-4 sm:mx-6 lg:mx-8 bg-white p-8 sm:p-10 rounded-xl shadow-2xl border-t-8 border-red-600 relative overflow-hidden">
+            
+            <h1 class="text-3xl font-extrabold text-gray-900 text-center mb-4">
+                Join the <span class="text-red-600">TLE</span> Organization
+            </h1>
+            <p class="text-center text-gray-600 mb-8">
+                Please fill out the form below to apply as a member. Make sure all information is correct.
+            </p>
 
-            <div class="p-8 bg-white rounded-2xl shadow-xl border-t-8 border-red-600">
-                <form action="https://formspree.io/f/xdawwnql" method="POST" id="tleForm" class="space-y-6">
+            <form action="https://formspree.io/f/xdawwnql" method="POST" id="tleForm" class="space-y-6">
 
-                    <div>
-                        <label class="block text-sm font-semibold text-gray-700 mb-1">Full Name</label>
-                        <input type="text" id="fullname" name="Full Name" placeholder="Enter your full name"
-                        class="w-full rounded-lg border-gray-300 focus:border-red-500 focus:ring-red-500">
-                    </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-1">Full Name</label>
+                    <input type="text" id="fullname" name="Full Name" placeholder="Enter your full name"
+                    class="w-full rounded-lg border-gray-300 focus:border-red-500 focus:ring-red-500">
+                </div>
 
-                    <div>
-                        <label class="block text-sm font-semibold text-gray-700 mb-1">Grade & Section</label>
-                        <input type="text" id="grade" name="Grade & Section" placeholder="e.g. Grade 10 - A"
-                        class="w-full rounded-lg border-gray-300 focus:border-red-500 focus:ring-red-500">
-                    </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-1">Grade & Section</label>
+                    <input type="text" id="grade" name="Grade & Section" placeholder="e.g. Grade 10 - A"
+                    class="w-full rounded-lg border-gray-300 focus:border-red-500 focus:ring-red-500">
+                </div>
 
-                    <div>
-                        <label class="block text-sm font-semibold text-gray-700 mb-1">Age</label>
-                        <input type="number" id="age" name="Age" placeholder="Enter your age"
-                        class="w-full rounded-lg border-gray-300 focus:border-red-500 focus:ring-red-500">
-                    </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-1">Age</label>
+                    <input type="number" id="age" name="Age" placeholder="Enter your age"
+                    class="w-full rounded-lg border-gray-300 focus:border-red-500 focus:ring-red-500">
+                </div>
 
-                    <div>
-                        <label class="block text-sm font-semibold text-gray-700 mb-1">Phone Number</label>
-                        <input type="tel" id="phone" name="Phone Number" placeholder="09XXXXXXXXX"
-                        class="w-full rounded-lg border-gray-300 focus:border-red-500 focus:ring-red-500">
-                    </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-1">Phone Number</label>
+                    <input type="tel" id="phone" name="Phone Number" placeholder="09XXXXXXXXX"
+                    class="w-full rounded-lg border-gray-300 focus:border-red-500 focus:ring-red-500">
+                </div>
 
-                    <div>
-                        <label class="block text-sm font-semibold text-gray-700 mb-1">Position You Want to Apply For</label>
-                        <select id="position" name="Position"
-                        class="w-full rounded-lg border-gray-300 focus:border-red-500 focus:ring-red-500">
-                            <option value="">Select a position</option>
-                            <option>President</option>
-                            <option>Vice President</option>
-                            <option>Secretary</option>
-                            <option>Treasurer</option>
-                            <option>Auditor</option>
-                            <option>Public Information Officer</option>
-                            <option>Business Manager</option>
-                            <option>Representative</option>
-                        </select>
-                    </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-1">Position You Want to Apply For</label>
+                    <select id="position" name="Position"
+                    class="w-full rounded-lg border-gray-300 focus:border-red-500 focus:ring-red-500">
+                        <option value="">Select a position</option>
+                        <option>President</option>
+                        <option>Vice President</option>
+                        <option>Secretary</option>
+                        <option>Treasurer</option>
+                        <option>Auditor</option>
+                        <option>Public Information Officer</option>
+                        <option>Business Manager</option>
+                        <option>Representative</option>
+                    </select>
+                </div>
 
-                    <div class="pt-4">
-                        <button type="submit"
-                        class="pump-btn w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl transition duration-200 shadow-lg">
-                        Submit Application
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+                <div class="pt-4">
+                    <button type="submit"
+                    class="pump-btn w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl transition duration-200 shadow-lg">
+                    Submit Application
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
 
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-lg font-bold mb-2">Muntindilaw National High School TLE Organization</p>
-            <p class="text-sm text-gray-400">&copy; 2026. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg font-bold mb-2">Muntindilaw National High School TLE Organization</p>
+            <p class="text-sm text-gray-400">&copy; 2026. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            if (!mobileMenu.classList.contains('hidden')) {
-                mobileMenuBtn.innerHTML = `
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>`;
-            } else {
-                mobileMenuBtn.innerHTML = `
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>`;
-            }
-        });
+    document.addEventListener('DOMContentLoaded', () => {
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (!mobileMenu.classList.contains('hidden')) {
+                mobileMenuBtn.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>`;
+            } else {
+                mobileMenuBtn.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>`;
+            }
+        });
+    });
 
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-    });
+    document.getElementById("tleForm").addEventListener("submit", function (e) {
+        let fullname = document.getElementById("fullname").value.trim();
+        let grade = document.getElementById("grade").value.trim();
+        let age = document.getElementById("age").value.trim();
+        let phone = document.getElementById("phone").value.trim();
+        let position = document.getElementById("position").value;
 
-    document.getElementById("tleForm").addEventListener("submit", function (e) {
-        let fullname = document.getElementById("fullname").value.trim();
-        let grade = document.getElementById("grade").value.trim();
-        let age = document.getElementById("age").value.trim();
-        let phone = document.getElementById("phone").value.trim();
-        let position = document.getElementById("position").value;
+        if (fullname === "") {
+            alert("Please enter your full name.");
+            e.preventDefault();
+            return;
+        } 
+        if (grade === "") {
+            alert("Please enter your grade and section.");
+            e.preventDefault();
+            return;
+        } 
+        if (age === "" || age <= 0) {
+            alert("Please enter a valid age.");
+            e.preventDefault();
+            return;
+        } 
+        if (phone === "" || phone.length < 11) {
+            alert("Phone number must be at least 11 digits.");
+            e.preventDefault();
+            return;
+        } 
+        if (position === "") {
+            alert("Please select the position you want to apply for.");
+            e.preventDefault();
+            return;
+        }
 
-        // Validation logic
-        if (fullname === "") {
-            alert("Please enter your full name.");
-            e.preventDefault();
-            return;
-        } 
-        if (grade === "") {
-            alert("Please enter your grade and section.");
-            e.preventDefault();
-            return;
-        } 
-        if (age === "" || age <= 0) {
-            alert("Please enter a valid age.");
-            e.preventDefault();
-            return;
-        } 
-        if (phone === "" || phone.length < 11) {
-            alert("Phone number must be at least 11 digits.");
-            e.preventDefault();
-            return;
-        } 
-        if (position === "") {
-            alert("Please select the position you want to apply for.");
-            e.preventDefault();
-            return;
-        }
-
-        // If it reaches here, the form will naturally submit to Formspree.
-        alert("Application submitting! Thank you for joining the TLE Organization.");
-    });
+        alert("Application submitting! Thank you for joining the TLE Organization.");
+    });
 </script>
 
 </body>
-</html> 
+</html>
