@@ -11,16 +11,19 @@
      <style>
         body {
             font-family: 'Inter', sans-serif;
-	    background-image: url('https://i.imgur.com/x15DQz6.jpeg'); 
+            /* The image that stays fixed in the background */
+            background-image: url('https://i.imgur.com/x15DQz6.jpeg'); 
             background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat; 
             background-attachment: fixed; 
             background-color: #f7f7f7; 
             position: relative;
+            min-height: 100vh;
         }
         
-            body::before {
+        /* This creates the 40% white overlay to make text more readable */
+        body::before {
             content: '';
             position: absolute;
             top: 0;
