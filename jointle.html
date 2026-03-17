@@ -173,12 +173,6 @@
         btn.innerText = "Sending...";
 
         const data = new FormData(form);
-        
-        const age = parseInt(ageInput.value);
-        if (age < 11 || age > 30) {
-            alert("Sorry! Membership is only open for ages 11 to 30.");
-            return; // Stops the form from sending
-        }
         try {
             const response = await fetch(form.action, {
                 method: 'POST',
@@ -250,6 +244,11 @@
             e.preventDefault();
             return;
         } 
+        const age = parseInt(ageInput.value);
+        if (age < 11 || age > 30) {
+            alert("Sorry! Membership is only open for ages 11 to 30.");
+            return; // Stops the form from sending
+        }
         if (phone === "" || phone.length < 11) {
             alert("Phone number must be at least 11 digits.");
             e.preventDefault();
