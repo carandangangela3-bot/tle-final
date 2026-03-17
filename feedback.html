@@ -31,10 +31,6 @@
             padding-top: 5rem;
             padding-bottom: 5rem;
         }
-
-        #successMessage {
-            transition: all 0.4s ease-in-out;
-        }
     </style>
 </head>
 <body>
@@ -55,10 +51,10 @@
                 <a href="about.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">About</a>
                 <a href="events.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Events</a>
                 <a href="jointle.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Join TLE</a>
-                <a href="feedback.html" class="nav-link text-red-600 font-bold hover:text-red-600 transition duration-150">Feedback</a>
+                <a href="feedback.html" class="nav-link text-red-600 font-bold">Feedback</a>
             </nav>
             
-            <button id="mobile-menu-btn" class="md:hidden p-2 text-blue-700 hover:text-red-600 focus:outline-none">
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-blue-700 focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
@@ -66,99 +62,76 @@
         </div>
 
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
-                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700">Home</a>
-                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700">About</a>
-                <a href="events.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700">Events</a>
-                <a href="jointle.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700">Join TLE</a>
-                <a href="feedback.html" class="block px-3 py-2 rounded-md text-base font-medium text-red-600 bg-gray-50">Feedback</a>
+            <div class="px-2 pt-2 pb-3 space-y-1 flex flex-col">
+                <a href="index.html" class="block px-3 py-2 text-gray-700">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700">About</a>
+                <a href="events.html" class="block px-3 py-2 text-gray-700">Events</a>
+                <a href="jointle.html" class="block px-3 py-2 text-gray-700">Join TLE</a>
+                <a href="feedback.html" class="block px-3 py-2 text-red-600 font-bold bg-gray-50">Feedback</a>
             </div>
         </div>
     </header>
 
     <section id="feedback" class="section-padding flex justify-center items-center">
-        <div class="max-w-xl w-full mx-4 sm:mx-6 lg:mx-8 bg-white p-8 sm:p-10 rounded-xl shadow-2xl border-t-4 border-green-600 relative overflow-hidden">
+        <div class="max-w-xl w-full mx-4 bg-white p-8 sm:p-10 rounded-xl shadow-2xl border-t-4 border-green-600">
             
             <h1 class="text-3xl font-extrabold text-gray-900 text-center mb-6">
                 Share Your <span class="text-green-600">Feedback</span>
             </h1>
+            <p class="text-center text-gray-600 mb-8">
+                We value your input! Tell us how we can improve our programs and services.
+            </p>
 
-            <div id="successMessage" class="absolute top-0 left-0 right-0 p-4 rounded-t-lg text-center bg-green-600 text-white z-20 transform scale-95 opacity-0 pointer-events-none" role="alert">
-                <p class="font-bold text-lg">Thank you! Your feedback has been sent.</p>
-            </div>
-
-            <form action="https://formspree.io/f/xdawwool" method="POST" id="feedbackForm" class="space-y-6">
+            <form action="https://formspree.io/f/xdawwool" method="POST" class="space-y-6">
                 <div>
-                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-green-500 shadow-sm" placeholder="John Doe">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                    <input type="text" name="name" required 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-green-500 outline-none transition duration-150" 
+                           placeholder="John Doe">
                 </div>
 
                 <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-green-500 shadow-sm" placeholder="you@example.com">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                    <input type="email" name="email" required 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-green-500 outline-none transition duration-150" 
+                           placeholder="you@example.com">
                 </div>
 
                 <div>
-                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
-                    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-green-500 shadow-sm" placeholder="Your suggestions..."></textarea>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                    <textarea name="message" rows="4" required 
+                              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-green-500 outline-none transition duration-150" 
+                              placeholder="Your suggestions or comments..."></textarea>
                 </div>
 
-                <button type="submit" id="submitBtn" class="w-full flex justify-center py-3 px-4 rounded-lg shadow-md text-lg font-medium text-white bg-green-600 hover:bg-green-700 transition duration-200">
+                <button type="submit" 
+                        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-md text-lg font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none transition duration-200">
                     Submit Feedback
                 </button>
             </form>
         </div>
     </section>
 
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg font-bold mb-2">Muntindilaw National High School TLE Organization</p>
+            <p class="text-sm text-gray-400">&copy; 2026. All Rights Reserved.</p>
+        </div>
+    </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const form = document.getElementById('feedbackForm');
-            const successMsg = document.getElementById('successMessage');
-            const btn = document.getElementById('submitBtn');
             const mobileBtn = document.getElementById('mobile-menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
 
-            // Mobile Menu
-            mobileBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            // Form Handling
-            form.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                
-                btn.disabled = true;
-                btn.innerText = "Sending...";
-
-                try {
-                    const response = await fetch(form.action, {
-                        method: 'POST',
-                        body: new FormData(form),
-                        headers: { 'Accept': 'application/json' }
-                    });
-
-                    if (response.ok) {
-                        form.reset();
-                        // Pakitang success animation
-                        successMsg.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
-                        successMsg.classList.add('opacity-100', 'scale-100');
-
-                        setTimeout(() => {
-                            successMsg.classList.remove('opacity-100', 'scale-100');
-                            successMsg.classList.add('opacity-0', 'scale-95');
-                            setTimeout(() => successMsg.classList.add('pointer-events-none'), 400);
-                        }, 5000);
-                    } else {
-                        alert("May error sa pag-submit. Subukan muli.");
-                    }
-                } catch (err) {
-                    alert("Network error. Pakicheck ang internet connection.");
-                } finally {
-                    btn.disabled = false;
-                    btn.innerText = "Submit Feedback";
-                }
-            });
+            // Mobile Menu Toggle
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
         });
     </script>
+
 </body>
 </html>
