@@ -168,6 +168,7 @@
         form.addEventListener("submit", async (e) => {
             e.preventDefault(); 
 
+            // Get values
             const fullname = document.getElementById("fullname").value.trim();
             const grade = document.getElementById("grade").value.trim();
             const ageInput = document.getElementById("age");
@@ -176,31 +177,26 @@
             const phone = document.getElementById("phone").value.trim();
             const position = document.getElementById("position").value;
 
-            // Validation Logic
-            if (fullname === "") {
-                alert("Please enter your full name.");
+            // 1. Validation Alerts (Only for errors)
+            if (fullname === "" || grade === "" || position === "") {
+                alert("Please fill in all fields.");
                 return;
             }
-            if (grade === "") {
-                alert("Please enter your grade and section.");
-                return;
-            }
+            
             if (ageValue === "" || age < 11 || age > 30) {
                 alert("Sorry! Membership is only open for ages 11 to 30.");
                 return;
             }
-            if (phone === "" || phone.length < 11) {
+
+            if (phone.length < 11) {
                 alert("Please enter a valid 11-digit phone number.");
                 return;
             }
-            if (position === "") {
-                alert("Please select a position.");
-                return;
-            }
 
-            // Proceed with Fetch
+            // 2. Start Sending
             btn.disabled = true;
             btn.innerText = "Sending...";
+            status.classList.add("hidden"); // Hide status while sending
 
             const data = new FormData(form);
             try {
@@ -211,18 +207,18 @@
                 });
 
                 if (response.ok) {
+                    // 3. Success: Clear form and show message (No popup alert here)
                     form.reset(); 
-                    alert("Application submitted! Thank you for joining the TLE Organization.");
-                    status.innerText = "Application sent successfully!";
+                    status.innerText = "Application sent successfully! We will contact you soon.";
                     status.classList.remove("hidden", "text-red-600");
                     status.classList.add("text-green-600");
                 } else {
-                    status.innerText = "Oops! There was a problem submitting.";
+                    status.innerText = "Oops! Submission failed. Please try again.";
                     status.classList.remove("hidden", "text-green-600");
                     status.classList.add("text-red-600");
                 }
             } catch (error) {
-                status.innerText = "Network error. Please try again.";
+                status.innerText = "Network error. Check your connection.";
                 status.classList.remove("hidden");
                 status.classList.add("text-red-600");
             } finally {
@@ -238,21 +234,13 @@
         if (mobileMenuBtn && mobileMenu) {
             mobileMenuBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
-                if (!mobileMenu.classList.contains('hidden')) {
-                    mobileMenuBtn.innerHTML = `
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                        </svg>`;
-                } else {
-                    mobileMenuBtn.innerHTML = `
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>`;
-                }
+                const isHidden = mobileMenu.classList.contains('hidden');
+                mobileMenuBtn.innerHTML = isHidden 
+                    ? `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>`
+                    : `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>`;
             });
         }
     });
 </script>
-
 </body>
 </html>
