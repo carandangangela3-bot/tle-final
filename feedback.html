@@ -10,7 +10,7 @@
       <style>
         body {
             font-family: 'Inter', sans-serif;
-	    background-image: url('https://i.imgur.com/x15DQz6.jpeg'); 
+            background-image: url('https://i.imgur.com/x15DQz6.jpeg'); 
             background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat; 
@@ -34,36 +34,34 @@
             padding-top: 5rem;
             padding-bottom: 5rem;
         }
+
+        /* Added smooth transition for the success message */
+        #successMessage {
+            transition: all 0.4s ease-in-out;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Header & Navigation (FIXED: The structure for logo/title is correct, all links are present) -->
     <header id="header" class="sticky top-0 z-50 bg-white border-b border-red-500/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-3">
-            <!-- Logo and Title (Acts as a link to home) -->
            <a href="index.html" class="flex items-center space-x-3">
               <img src="https://i.imgur.com/UumgAmR.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="DEPED Logo" class="h-10 w-auto rounded-full shadow-md">
-
-	   <img src="https://i.imgur.com/ezYRCVu.jpeg" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="MNHS Logo" class="h-10 w-auto rounded-full shadow-md">
-
-           <img src="https://i.imgur.com/JwTUE7y.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="TLE Logo" class="h-10 w-auto rounded-full shadow-md">
+              <img src="https://i.imgur.com/ezYRCVu.jpeg" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="MNHS Logo" class="h-10 w-auto rounded-full shadow-md">
+              <img src="https://i.imgur.com/JwTUE7y.png" onerror="this.onerror=null;this.src='https://placehold.co/100x100/fecaca/991b1b?text=TLE'" alt="TLE Logo" class="h-10 w-auto rounded-full shadow-md">
                 <span class="text-xl font-extrabold tracking-tight text-gray-900 hidden sm:block">
                     Muntindilaw <span class="text-red-600">TLE</span> Org.
                 </span>
             </a>
 
-            <!-- Navigation Links (Includes the Home navigator) -->
             <nav class="hidden md:flex space-x-6 font-medium">
-                <!-- THIS IS YOUR RETURN HOME LINK -->
                 <a href="index.html" class="nav-link text-gray-700 transition duration-150">Home</a>
                 <a href="about.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">About</a>
                 <a href="events.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Events</a>
                 <a href="jointle.html" class="nav-link text-gray-700 hover:text-red-600 transition duration-150">Join TLE</a>
                 <a href="feedback.html" class="nav-link text-red-600 font-bold hover:text-red-600 transition duration-150">Feedback</a>
             </nav>
-			
-             <!-- Mobile Menu Button -->
+            
             <button id="mobile-menu-btn" class="md:hidden p-2 text-blue-700 hover:text-red-600 focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -71,7 +69,6 @@
             </button>
         </div>
 
-        <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
                 <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-red-600">Home</a>
@@ -81,13 +78,9 @@
                 <a href="feedback.html" class="block px-3 py-2 rounded-md text-base font-medium text-red-600 bg-gray-50">Feedback</a>
             </div>
         </div>
-        </div>
     </header>
 
-
-    <!-- Main Content: Feedback Form -->
     <section id="feedback" class="section-padding flex justify-center items-center">
-        <!-- Added 'relative' to make successMessage absolute positioning work -->
         <div class="max-w-xl w-full mx-4 sm:mx-6 lg:mx-8 bg-white p-8 sm:p-10 rounded-xl shadow-2xl border-t-4 border-green-600 relative overflow-hidden">
             
             <h1 class="text-3xl font-extrabold text-gray-900 text-center mb-6">
@@ -97,14 +90,11 @@
                 We value your input! Tell us how we can improve our programs and services.
             </p>
 
-            <!-- Success Message (Now absolutely positioned at the top of the card and hidden) -->
             <div id="successMessage" class="absolute top-0 left-0 right-0 p-4 rounded-t-lg text-center bg-green-600 text-white z-20 transform scale-95 opacity-0 pointer-events-none" role="alert">
                 <p class="font-bold text-lg">Thank you! Your feedback has been successfully submitted.</p>
             </div>
 
-            <!-- Feedback Form (Stays visible and ready for input) -->
             <form action="https://formspree.io/f/xdawwool" method="POST" id="feedbackForm" class="space-y-6">
-                <!-- Name Field -->
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
                     <input type="text" id="name" name="name" required
@@ -112,7 +102,6 @@
                             placeholder="John Doe">
                 </div>
 
-                <!-- Email Field -->
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
                     <input type="email" id="email" name="email" required
@@ -120,7 +109,6 @@
                             placeholder="you@example.com">
                 </div>
 
-                <!-- Message Field -->
                 <div>
                     <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
                     <textarea id="message" name="message" rows="4" required
@@ -128,19 +116,16 @@
                               placeholder="Your suggestions or comments..."></textarea>
                 </div>
 
-                <!-- Submit Button -->
                 <div>
-                    <button type="submit"
+                    <button type="submit" id="submitBtn"
                              class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-md text-lg font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-200">
                         Submit Feedback
                     </button>
                 </div>
             </form>
-
         </div>
     </section>
 
-    <!-- Footer for page context -->
    <footer class="bg-gray-800 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-lg font-bold mb-2">Muntindilaw National High School TLE Organization</p>
@@ -148,80 +133,69 @@
         </div>
     </footer>
 
-
     <script>
-		document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Mobile Menu Handling ---
             const mobileMenuBtn = document.getElementById('mobile-menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
-            const navLinks = document.querySelectorAll('.nav-link, #mobile-menu a');
-            const feedbackForm = document.getElementById('feedback-form');
-            const successMessage = document.getElementById('success-message');
             
-               mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
-                // Toggle icon
                 if (!mobileMenu.classList.contains('hidden')) {
-                    mobileMenuBtn.innerHTML = `
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    `;
+                    mobileMenuBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>`;
                 } else {
-                    mobileMenuBtn.innerHTML = `
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
-                    `;
+                    mobileMenuBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>`;
                 }
             });
-            
-            // Close Mobile Menu after clicking a link
-            document.querySelectorAll('#mobile-menu a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                    mobileMenuBtn.innerHTML = `
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
-                    `;
-                });
-            });
-        });
-		
-        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- Feedback Form Handling with Formspree ---
             const feedbackForm = document.getElementById('feedbackForm');
             const successMessage = document.getElementById('successMessage');
+            const submitBtn = document.getElementById('submitBtn');
 
-            if (feedbackForm && successMessage) {
-                // --- Feedback Form Handling ---
-                feedbackForm.addEventListener('submit', (e) => {
-                    e.preventDefault();
-                    
-                    console.log('Form submitted. Data collected and reset.');
+            feedbackForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                // Disable button during submission
+                submitBtn.disabled = true;
+                submitBtn.innerText = "Sending...";
 
-                    // 1. Show the success message with a smooth transition
-                    successMessage.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
-                    successMessage.classList.add('opacity-100', 'scale-100');
-                    
-                    // 2. Reset the form fields immediately (making the fields "blank" but usable)
-                    feedbackForm.reset();
+                const formData = new FormData(feedbackForm);
 
-                    // 3. Hide the success message after 5 seconds with a smooth transition
-                    setTimeout(() => {
-                        successMessage.classList.remove('opacity-100', 'scale-100');
-                        successMessage.classList.add('opacity-0', 'scale-95');
+                try {
+                    const response = await fetch(feedbackForm.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: { 'Accept': 'application/json' }
+                    });
+
+                    if (response.ok) {
+                        // Success Logic
+                        feedbackForm.reset();
                         
-                        // Disable pointer events after transition finishes
+                        // Show success message
+                        successMessage.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
+                        successMessage.classList.add('opacity-100', 'scale-100');
+
+                        // Hide message after 5 seconds
                         setTimeout(() => {
-                            successMessage.classList.add('pointer-events-none');
-                        }, 300); // Matches the transition duration in CSS
-                    }, 5000); // 5 seconds
-                });
-            } else {
-                console.error("Required form elements (feedbackForm or successMessage) not found.");
-            }
+                            successMessage.classList.remove('opacity-100', 'scale-100');
+                            successMessage.classList.add('opacity-0', 'scale-95');
+                            setTimeout(() => {
+                                successMessage.classList.add('pointer-events-none');
+                            }, 400);
+                        }, 5000);
+                    } else {
+                        alert("Oops! There was a problem submitting your feedback.");
+                    }
+                } catch (error) {
+                    alert("Network error. Please check your connection and try again.");
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = "Submit Feedback";
+                }
+            });
         });
     </script>
-
 </body>
 </html>
