@@ -101,32 +101,32 @@
 
             <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-1">Full Name</label>
-                <input type="text" name="Full Name" placeholder="Enter your full name" required
+                <input type="text" id="fullname" name="Full Name" placeholder="Enter your full name" required
                 class="w-full rounded-lg border-gray-300 focus:border-red-600 focus:ring-red-600">
             </div>
 
             <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-1">Grade & Section</label>
-                <input type="text" name="Grade & Section" placeholder="e.g. Grade 10 - A" required
+                <input type="text" id="grade" name="Grade & Section" placeholder="e.g. Grade 10 - A" required
                 class="w-full rounded-lg border-gray-300 focus:border-red-600 focus:ring-red-600">
             </div>
 
             <div class="grid grid-cols-2 gap-4">
                 <div>
                     <label class="block text-sm font-semibold text-gray-700 mb-1">Age</label>
-                    <input type="number" name="Age" placeholder="Age" required min="10" max="100"
+                    <input type="number" id="age" name="Age" placeholder="Age" required min="11" max="30"
                     class="w-full rounded-lg border-gray-300 focus:border-red-600 focus:ring-red-600">
                 </div>
                 <div>
                     <label class="block text-sm font-semibold text-gray-700 mb-1">Phone Number</label>
-                    <input type="tel" name="Phone Number" placeholder="09XXXXXXXXX" required pattern="0[0-9]{10}"
+                    <input type="tel" id="phone" name="Phone Number" placeholder="09XXXXXXXXX" required pattern="0[0-9]{10}"
                     class="w-full rounded-lg border-gray-300 focus:border-red-600 focus:ring-red-600">
                 </div>
             </div>
 
             <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-1">Position You Want to Apply For</label>
-                <select name="Position" required
+                <select id="position" name="Position" required
                 class="w-full rounded-lg border-gray-300 focus:border-red-600 focus:ring-red-600">
                     <option value="" disabled selected>Select a position</option>
                     <option value="President">President</option>
@@ -142,7 +142,7 @@
 
             <div class="pt-4">
                 <button type="submit" id="submitBtn"
-                class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl transition duration-200 shadow-lg">
+                class="pump-btn w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl transition duration-200 shadow-lg">
                     Submit Application
                 </button>
             </div>
@@ -150,13 +150,14 @@
             <p id="formStatus" class="text-center font-bold mt-4 hidden"></p>
         </form>
     </div>
+</section>
     
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-lg font-bold mb-2">Muntindilaw National High School TLE Organization</p>
-            <p class="text-sm text-gray-400">&copy; 2026. All Rights Reserved.</p>
-        </div>
-    </footer>
+<footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-lg font-bold mb-2">Muntindilaw National High School TLE Organization</p>
+        <p class="text-sm text-gray-400">&copy; 2026. All Rights Reserved.</p>
+    </div>
+</footer>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -164,19 +165,18 @@
         const status = document.getElementById("formStatus");
         const btn = document.getElementById("submitBtn");
 
-        // --- 1. Form Submission & Validation Logic ---
         form.addEventListener("submit", async (e) => {
-            e.preventDefault(); // Stop page refresh
+            e.preventDefault(); 
 
-            // Get values for validation
             const fullname = document.getElementById("fullname").value.trim();
             const grade = document.getElementById("grade").value.trim();
-            const ageValue = document.getElementById("age").value.trim();
+            const ageInput = document.getElementById("age");
+            const ageValue = ageInput.value.trim();
             const age = parseInt(ageValue);
             const phone = document.getElementById("phone").value.trim();
             const position = document.getElementById("position").value;
 
-            // Validation Checks
+            // Validation Logic
             if (fullname === "") {
                 alert("Please enter your full name.");
                 return;
@@ -185,7 +185,6 @@
                 alert("Please enter your grade and section.");
                 return;
             }
-            // Age Limit: 11-30
             if (ageValue === "" || age < 11 || age > 30) {
                 alert("Sorry! Membership is only open for ages 11 to 30.");
                 return;
@@ -199,7 +198,7 @@
                 return;
             }
 
-            // If we reach here, validation passed!
+            // Proceed with Fetch
             btn.disabled = true;
             btn.innerText = "Sending...";
 
@@ -212,7 +211,7 @@
                 });
 
                 if (response.ok) {
-                    form.reset(); // This clears the form!
+                    form.reset(); 
                     alert("Application submitted! Thank you for joining the TLE Organization.");
                     status.innerText = "Application sent successfully!";
                     status.classList.remove("hidden", "text-red-600");
@@ -232,7 +231,7 @@
             }
         });
 
-        // --- 2. Mobile Menu Logic ---
+        // Mobile Menu Logic
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         
